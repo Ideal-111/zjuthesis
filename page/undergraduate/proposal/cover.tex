@@ -65,6 +65,16 @@
                 所在学院   & \uline{\hfill \Department \hfill} \\
             }
             {%
+                题目   & \uline{\hfill \Title \hfill} \\
+                 \ifthenelse{\equal{\TitleEngLines}{1}}
+                {%   DepartmentLines == 1
+                英文题目    &  \uline{\hfill \TitleEngLineOne \hfill} \\
+                }
+                {%   DepartmentLines == 2
+                英文题目    &  \uline{\hfill \TitleEngLineOne \hfill} \\
+                            &  \uline{\hfill \TitleEngLineTwo \hfill} \\
+                            & \\
+                }
                 姓名与学号 & \uline{\hfill \StudentName~\StudentID \hfill} \\
                 指导教师   & \uline{\hfill \AdvisorName \hfill}            \\
                 \ifthenelse{\equal{\MajorLines}{1}}
